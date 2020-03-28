@@ -26,9 +26,10 @@ class Triangle(Figure):
         self.sides = sides
         for i in self.sides:
             if i <= 0:
+                print('Значение не может быть отрицательным или нулевым.')
                 sys.exit()
         if len(self.sides) != 3:
-            print(self.P)
+            print('Должны быть введены 3 стороны.')
             sys.exit()
 
     def P(self):
@@ -46,8 +47,10 @@ class Rectangle(Figure):
         self.sides = sides
         for i in self.sides:
             if i <= 0:
+                print('Значение не может быть отрицательным или нулевым.')
                 sys.exit()
         if len(self.sides) != 2:
+            print('Должны быть введены 2 стороны.')
             sys.exit()
 
     def P(self):
@@ -63,6 +66,7 @@ class Round(Figure):
     def __init__(self, rad):
         self.radius = rad
         if self.radius <= 0:
+            print('Значение не может быть отрицательным или нулевым.')
             sys.exit()
 
     def P(self):
@@ -76,7 +80,7 @@ class Round(Figure):
 
 t = Triangle([3, 4, 5])
 r = Rectangle([3, 4])
-kolo = Round(0)
+kolo = Round(9)
 
 print('Периметр треугольника:', t.P(), '\nПлощадь треугольника:', t.S())
 print('\nПериметр прямоугольника:', r.P(), '\nПлощадь прямоугольника:', r.S())
