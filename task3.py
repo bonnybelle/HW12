@@ -54,11 +54,11 @@ class Switch:
 
 
 s = Switch
-s.property_unit_name = 'a unit'
-s.property_mac_address = '12312313'
-s.property_ip_address = '192.2312313'
-s.property_login = 'schnittke'
-s.property_password = 'F1298JHsf0_45'
+s = Switch
+s.unit_name = 'a unit'
+s.mac_address = '12312313'
+s.ip_address = '192.2312313'
+s.login = 'schnittke'
+s.password = 'F1298JHsf0_45'
 
-print(s.property_unit_name, s.property_mac_address, s.property_ip_address,
-      s.property_login, s.property_password, sep='\n')
+print(s.unit_name, s.mac_address, s.ip_address, s.login, s.password, sep='\n')
